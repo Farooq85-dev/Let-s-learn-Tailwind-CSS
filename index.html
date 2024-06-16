@@ -12,8 +12,137 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav>
-      
+    <nav class="p-3 flex justify-between items-center">
+      <a href="#" class="flex items-center gap-2">
+        <img class="w-10" src="./assets/icon.svg" alt="Tailwind-Css" />
+        <span class="font-medium">Tailwind</span>
+      </a>
+      <div id="navMenu" class="hidden md:flex gap-10">
+        <a href="#" class="font-medium hover:text-cyan-400">Pricing</a>
+        <a href="#" class="font-medium hover:text-cyan-400">Docs</a>
+        <a href="#" class="font-medium hover:text-cyan-400">Changelog</a>
+        <a href="#" class="font-medium hover:text-cyan-400">About</a>
+      </div>
+      <button
+        class="hidden md:flex hover:border-gray-500 justify-center items-center border border-gray-50 px-2 py-4 rounded-lg"
+      >
+        <span>Electron Developer</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M5 12l14 0" />
+          <path d="M15 16l4 -4" />
+          <path d="M15 8l4 4" />
+        </svg>
+      </button>
+
+      <button class="text-grey-50 md:hidden" onclick="handleClick();">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="icon icon-tabler icons-tabler-outline icon-tabler-menu-deep"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M4 6h16" />
+          <path d="M7 12h13" />
+          <path d="M10 18h10" />
+        </svg>
+      </button>
+
+      <div id="navDialog" class="fixed bg-white inset-0 p-3">
+        <div class="flex justify-between items-center">
+          <a href="#" class="flex items-center gap-2">
+            <img class="w-10" src="./assets/icon.svg" alt="Tailwind-Css" />
+            <span class="font-medium">Tailwind</span>
+          </a>
+          <button class="text-grey-50 md:hidden" onclick="handleClick();">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-x"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M18 6l-12 12" />
+              <path d="M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="mt-6 p-3 md:hidden">
+          <a
+            href="#"
+            class="font-medium block mt-3 p-2 rounded-lg text-center hover:bg-gray-50"
+            >Pricing</a
+          >
+          <a
+            href="#"
+            class="font-medium block mt-3 p-2 text-center rounded-lg hover:bg-gray-50"
+            >Pricing</a
+          >
+          <a
+            href="#"
+            class="font-medium block mt-3 p-2 text-center rounded-lg hover:bg-gray-50"
+            >Pricing</a
+          >
+          <a
+            href="#"
+            class="font-medium block mt-3 p-2 text-center rounded-lg hover:bg-gray-50"
+            >Pricing</a
+          >
+          <a
+            href="#"
+            class="font-medium block mt-3 p-2 text-center rounded-lg hover:bg-gray-50"
+            >Pricing</a
+          >
+        </div>
+        <div>
+          <button
+            class="flex md:hidden justify-center items-center hover:border-gray-500 border w-full border-gray-50 px-2 py-4 rounded-lg"
+          >
+            <span>Electron Developer</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M5 12l14 0" />
+              <path d="M15 16l4 -4" />
+              <path d="M15 8l4 4" />
+            </svg>
+          </button>
+        </div>
+      </div>
     </nav>
     <!-- End Nabar -->
     <script src="./script.js"></script>
