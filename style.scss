@@ -8,18 +8,18 @@
   font-family: Montserrat !important;
 }
 
-.new{
+.new {
   animation: blink 5s linear infinite;
 }
 
 @keyframes blink {
-  25%{
+  25% {
     opacity: 0.5;
   }
-  50%{
+  50% {
     opacity: 0.4;
   }
-  75%{
+  75% {
     opacity: 0.5;
   }
 }
