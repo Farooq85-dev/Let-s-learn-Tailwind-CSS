@@ -6,7 +6,7 @@
     <!-- Title -->
     <title>Tailwind Css</title>
     <!-- Icon -->
-    <link rel="icon" type="img/jpg" href="./assets/icon.svg" />
+    <link rel="icon" type="img/jpg" href="./assets/icon.png" />
     <!-- Custom SAAS -->
     <link rel="stylesheet" href="./output.css" />
   </head>
@@ -17,7 +17,7 @@
         class="flex flex-col justify-between items-center lg:flex-row gap-4 lg:gap-0 p-3"
       >
         <div class="logoContainer">
-          <a href="#"><span class="font-bold">Astro</span>Ship</a>
+          <a href="#"><span class="font-bold">Tailwind</span>Ship</a>
         </div>
         <div>
           <ul
@@ -55,7 +55,7 @@
             Login
           </button>
           <button
-            class="ml-1 bg-slate-800 text-white rounded-lg hover:bg-slate-700 hover:duration-700 ease-in py-2 px-3"
+            class="ml-1 bg-gray-900 text-white rounded-lg hover:bg-slate-700 hover:duration-700 ease-in py-2 px-3"
           >
             Signup
           </button>
@@ -83,7 +83,7 @@
           </div>
           <div class="heroBtns flex flex-col sm:flex-row gap-2">
             <button
-              class="flex flex-row justify-center items-center gap-2 bg-slate-800 text-white rounded-lg hover:bg-slate-700 hover:duration-700 ease-in py-2 px-3"
+              class="flex flex-row justify-center items-center gap-2 bg-gray-900 text-white rounded-lg hover:bg-slate-700 hover:duration-700 ease-in py-2 px-3"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -383,9 +383,9 @@
           <h2 class="text-center">Works with your technologies</h2>
         </div>
         <div
-          class="techIcons flex flex-wrap justify-center md:flex-row md:items-center md:justify-evenly mt-10"
+          class="techIcons flex gap-3 flex-wrap justify-center md:flex-row md:items-center md:justify-evenly mt-10"
         >
-          <div class="react">
+          <div class="react bg-gray-200 p-2 rounded-2xl">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -422,7 +422,7 @@
               />
             </svg>
           </div>
-          <div class="creativeCommons">
+          <div class="creativeCommons bg-gray-200 p-2 rounded-2xl">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -445,7 +445,7 @@
               />
             </svg>
           </div>
-          <div class="anglular">
+          <div class="anglular bg-gray-200 p-2 rounded-2xl">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -466,7 +466,7 @@
               <path d="M10 13h4" />
             </svg>
           </div>
-          <div class="tailwind">
+          <div class="tailwind bg-gray-200 p-2 rounded-2xl">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -486,7 +486,7 @@
             </svg>
           </div>
 
-          <div class="bootstrap">
+          <div class="bootstrap bg-gray-200 p-2 rounded-2xl">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -509,7 +509,7 @@
               <path d="M9 16v-8h3.5a2 2 0 1 1 0 4h-3.5h4a2 2 0 1 1 0 4h-4z" />
             </svg>
           </div>
-          <div class="ts">
+          <div class="ts bg-gray-200 p-2 rounded-2xl">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -537,6 +537,51 @@
       </div>
     </div>
     <!-- End Tech Secction -->
+
+    <!-- Footer Sec -->
+    <div class="p-10">
+      <div class="footerSec rounded-lg mb-10 bg-gray-900 p-10 text-white">
+        <div class="">
+          <div class="cnt flex flex-col justify-center items-center gap-3">
+            <h1 class="text-center">Build faster websites</h1>
+            <p>
+              Pull content from anywhere and serve it fast with Astro's next-gen
+              island architecture.
+            </p>
+            <div class="footerBtn">
+              <button
+                class="flex flex-row justify-center items-center bg-white text-black rounded-lg py-2 px-3 gap-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-player-play"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M7 4v16l13 -8z" />
+                </svg>
+                Get Started
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Footer Sec -->
+
+    <!-- Author Copyrights -->
+    <div class="cc mb-5 flex flex-col justify-center items-center">
+      <h2>Copyright © 2024. All rights reserved.</h2>
+      <p>Created by Muhammad Farooq</p>
+    </div>
+    <!-- End Author Remarks -->
 
     <script src="./script.js"></script>
   </body>
