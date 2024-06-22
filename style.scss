@@ -9,17 +9,51 @@
 }
 
 .new {
+  background-color: #574fc1 !important;
   animation: blink 5s linear infinite;
 }
 
 @keyframes blink {
   25% {
-    opacity: 0.5;
+    opacity: 0.7;
   }
   50% {
-    opacity: 0.4;
+    opacity: 0.5;
   }
   75% {
-    opacity: 0.5;
+    opacity: 0.7;
+  }
+}
+
+h1 {
+  font-size: 2em !important;
+  font-weight: bold !important;
+}
+h2 {
+  font-size: 1.5em !important;
+  font-weight: bold !important;
+}
+
+p {
+  font-weight: 500;
+}
+
+.techSec {
+  svg {
+    width: 60px !important;
+    height: 60px !important;
+    color: #574fc1 !important;
+    animation: blink 5s linear infinite;
+    @keyframes blink {
+      25% {
+        opacity: 0.7;
+      }
+      50% {
+        opacity: 0.5;
+      }
+      75% {
+        opacity: 0.7;
+      }
+    }
   }
 }
