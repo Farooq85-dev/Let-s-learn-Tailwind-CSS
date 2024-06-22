@@ -12,140 +12,57 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="p-3 flex justify-between items-center">
-      <a href="#" class="flex items-center gap-2">
-        <img class="w-10" src="./assets/icon.svg" alt="Tailwind-Css" />
-        <span class="font-medium">Tailwind</span>
-      </a>
-      <div id="navMenu" class="hidden md:flex gap-10">
-        <a href="#" class="font-medium hover:text-cyan-400">Pricing</a>
-        <a href="#" class="font-medium hover:text-cyan-400">Docs</a>
-        <a href="#" class="font-medium hover:text-cyan-400">Changelog</a>
-        <a href="#" class="font-medium hover:text-cyan-400">About</a>
-      </div>
-      <button
-        class="hidden md:flex hover:border-gray-500 justify-center items-center border border-gray-50 px-2 py-4 rounded-lg"
+    <nav class="shadow-sm">
+      <div
+        class="flex flex-col justify-between items-center lg:flex-row gap-4 lg:gap-0 p-3"
       >
-        <span>Electron Developer</span>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right"
-        >
-          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          <path d="M5 12l14 0" />
-          <path d="M15 16l4 -4" />
-          <path d="M15 8l4 4" />
-        </svg>
-      </button>
-
-      <button class="text-grey-50 md:hidden" onclick="handleClick();">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="icon icon-tabler icons-tabler-outline icon-tabler-menu-deep"
-        >
-          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          <path d="M4 6h16" />
-          <path d="M7 12h13" />
-          <path d="M10 18h10" />
-        </svg>
-      </button>
-
-      <div id="navDialog" class="fixed bg-white inset-0 p-3">
-        <div class="flex justify-between items-center">
-          <a href="#" class="flex items-center gap-2">
-            <img class="w-10" src="./assets/icon.svg" alt="Tailwind-Css" />
-            <span class="font-medium">Tailwind</span>
-          </a>
-          <button class="text-grey-50 md:hidden" onclick="handleClick();">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="icon icon-tabler icons-tabler-outline icon-tabler-x"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path d="M18 6l-12 12" />
-              <path d="M6 6l12 12" />
-            </svg>
-          </button>
-        </div>
-        <div class="mt-6 p-3 md:hidden">
-          <a
-            href="#"
-            class="font-medium block mt-3 p-2 rounded-lg text-center hover:bg-gray-50"
-            >Pricing</a
-          >
-          <a
-            href="#"
-            class="font-medium block mt-3 p-2 text-center rounded-lg hover:bg-gray-50"
-            >Pricing</a
-          >
-          <a
-            href="#"
-            class="font-medium block mt-3 p-2 text-center rounded-lg hover:bg-gray-50"
-            >Pricing</a
-          >
-          <a
-            href="#"
-            class="font-medium block mt-3 p-2 text-center rounded-lg hover:bg-gray-50"
-            >Pricing</a
-          >
-          <a
-            href="#"
-            class="font-medium block mt-3 p-2 text-center rounded-lg hover:bg-gray-50"
-            >Pricing</a
-          >
+        <div class="logoContainer">
+          <a href="#"><span class="font-bold">Astro</span>Ship</a>
         </div>
         <div>
-          <button
-            class="flex md:hidden justify-center items-center hover:border-gray-500 border w-full border-gray-50 px-2 py-4 rounded-lg"
+          <ul
+            class="flex flex-col lg:flex-row lg:justify-center gap-4 items-center lg:gap-10 font-medium cursor-pointer"
           >
-            <span>Electron Developer</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path d="M5 12l14 0" />
-              <path d="M15 16l4 -4" />
-              <path d="M15 8l4 4" />
-            </svg>
+            <li>
+              <ul class="cursor-pointer">
+                <li>
+                  <select class="cursor-pointer py-2 px-3 rounded-lg shadow-sm">
+                    <option value="">Features</option>
+                    <option value="">Action</option>
+                    <option value="">Another Action</option>
+                    <option value="">Submenu</option>
+                    <option value="">404 Page</option>
+                  </select>
+                </li>
+              </ul>
+            </li>
+            <li>Pricing</li>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Contact</li>
+            <li>
+              Pro Version
+              <span class="new py-1 px-2 bg-slate-800 text-white rounded-lg"
+                >new</span
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="navBtns">
+          <button
+            class="font-bold border border-gray-400 text-black rounded-lg py-2 px-3"
+          >
+            Login
+          </button>
+          <button
+            class="ml-1 bg-slate-800 text-white rounded-lg hover:bg-slate-600 hover:duration-700 ease-in py-2 px-3"
+          >
+            Signup
           </button>
         </div>
       </div>
     </nav>
-    <!-- End Nabar -->
+    <!-- End Navbar -->
     <script src="./script.js"></script>
   </body>
 </html>

@@ -4,9 +4,22 @@
 @tailwind components;
 @tailwind utilities;
 
-
 * {
   font-family: Montserrat !important;
 }
 
+.new{
+  animation: blink 5s linear infinite;
+}
 
+@keyframes blink {
+  25%{
+    opacity: 0.5;
+  }
+  50%{
+    opacity: 0.4;
+  }
+  75%{
+    opacity: 0.5;
+  }
+}
