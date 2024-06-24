@@ -32,6 +32,10 @@ is to understand, how tailwind works under hood?
 ---
 `For animation:- Use animation name Such as ease-in`
 ---
+`For hide: Use hidden`
+---
+`What means lg:hidden:- Means that on large screen. Please, hide the respective element`
+---
 ```Tailwind Css Responsive Design breakpoints
 Before Reading the Tailwind Css breakpoints. Please, remember that Tailwind is using Mobile First Approach (MFS).
 
